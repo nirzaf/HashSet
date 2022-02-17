@@ -3,11 +3,11 @@
 
 HashSet<Vehicle> vehicles = new()
 {
-    new Vehicle("Car"),
-    new Vehicle("Bike"),
-    new Vehicle("Bike"),
-    new Vehicle("Bike"),
-    new Vehicle("Van")
+    new("Car"),
+    new("Bike"),
+    new("Bike"),
+    new("Bike"),
+    new("Van")
 };
 
 
@@ -27,14 +27,3 @@ stringHash.Add("Fazrin");
 WriteLine(stringHash.Count);
 
 ReadKey();
-
-
-public class Vehicle
-{
-    private readonly string _name;
-
-    public Vehicle(string name)
-    {
-        _name = name;
-    }
-}
