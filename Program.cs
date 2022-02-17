@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using static System.Console;
+﻿using static System.Console;
 
 
-HashSet<Vehicle> vehicles = new HashSet<Vehicle>
+HashSet<Vehicle> vehicles = new()
 {
     new Vehicle("Car"),
     new Vehicle("Bike"),
@@ -15,7 +14,7 @@ HashSet<Vehicle> vehicles = new HashSet<Vehicle>
 WriteLine(vehicles.Count);
 
 
-HashSet<string> stringHash = new HashSet<string>();
+HashSet<string> stringHash = new();
 
 IDictionary<string, Vehicle> veh = new Dictionary<string, Vehicle>();
 
